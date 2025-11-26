@@ -1,0 +1,22 @@
+<div class="header-nav">
+<!-- semantic section as a header -->
+<header>
+    <!-- h1 - h6. headings smaller as the number gets higher -->
+    <h1> Exploring Computer Graphics </h1>
+    <h5><span class="quoteText">"<%= randQuote.text %>"</span> - <span class="quoteAuthor"><%= randQuote.author %></span></h5>
+</header>
+<div class="navbar">
+
+    <div class="navlinks">
+        <nav>
+            <!-- hyperlinks to html files -->
+            <a href="/" class="<%= activeLink === 'home' ? 'active' : '' %>">Home</a>
+            <a href="/foundations" class="<%= activeLink === 'foundations' ? 'active' : '' %>">Foundations</a>
+            <a href="/applications" class="<%= activeLink === 'applications' ? 'active' : '' %>">Applications</a>
+            <a href="/futuretechnology" class="<%= activeLink === 'future' ? 'active' : '' %>">The Future</a>
+            <a href="/explore" class="<%= activeLink === 'explore' ? 'active' : '' %>">Explore</a>
+        </nav>
+    </div>
+
+</div>
+</div>

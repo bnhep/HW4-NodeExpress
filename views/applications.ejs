@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- partial for header -->
+    <%- include('partials/head.ejs') %> 
+
+    <body>
+        <!-- semantic section as navigation menu -->
+        <%- include('partials/nav.ejs') %> 
+
+        
+        <br><br>
+        <!-- div semantic section for content -->
+        <div class="content-main3">
+            <div id="app-card1" class="card-1">
+                <h2>The Many Applications of Computer Graphics</h2>
+                <p class="paragraph-adjust">
+                    Computer Graphics have become a prominent and essential part of many industries today from entertainment to education, and medicine to engineering.
+                    This page offers general information about the different applications of Computer Graphics in a variety of industries.
+                </p>
+                <figure class="content-main1">
+                    <img src="img/pokemon_evolution.jpg" alt="Years of pokemon" class="image-style">
+                    <figcaption>
+                    <br>
+                    <strong> The evolution of Pokemon Graphics </strong>
+                    Image Credit:
+                    <a href="https://www.reddit.com/r/gaming/comments/9dv0n4/pok%C3%A9mon_graphics_evolution_19962016/" target="_blank">Reddit</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- div semantic section for content -->
+        <div class="card-1">
+            <ul>
+                <li class="list-title"><strong>Here are some examples of applications of Computer Graphics</strong></li>
+                <li><span class="applications">Films/TV/Special Effects</span>: Graphics plays a large part in the film industry specifically in animation and special effects.
+                     Modern films are utilizing Computer Generated Imagery or CGI for short, to create very realistic environments, characters, and visual effects. Many prominent films such as
+                    The Avengers, Toy Story, and Avatar have heavily utilized CGI and earned positive feedback from viewers. Some notable demonstations of different types of animations can be 
+                    seen in the Netflix series  <a href="https://en.wikipedia.org/wiki/Love,_Death_%26_Robots" target="_blank"> Love Death + Robots. </a> </li>
+                <li><span class="applications">Video Games</span>: Game Development is another industry that evolves the use of graphics and is one of the largest consumer industry. 
+                    Early implementations of video games from the 90s involve 2D animations that were pre-recorded such as the early <a href="https://en.wikipedia.org/wiki/Mortal_Kombat_%281992_video_game%29" target="_blank"> Mortal Kombat Series. </a>
+                    From top-down perspectives, pixel art, and text based graphics, the game-development industry has evolved enormously in the recent years. Nowadays this industry employs
+                    advanced 3D graphics to create immersive and interactive worlds, making sure everything is visibly pleasing to the consumer. Notable examples are the <a href="https://en.wikipedia.org/wiki/Death_Stranding" target="_blank"> Death Stranding Series </a> </li>
+                <li><span class="applications">CAD-CAM & Design</span>: Computer-Aided Design and Computer-Aided Manafacturing relies on graphics to create models, simulate, and test products.
+                    Used by engineers, these systems allow for increase in productivity by rapidly increasing design interations and digital prototyping, it provides better visualization and perspective of their creations
+                    before production.</li>
+                <li><span class="applications">Medical Imaging</span>: Graphics are also used in the medical field, such as in techniques like MRIs, CT scans, and ultra sounds. These may utilize 
+                    computer graphics to visualize and reconstruct the body structure of medical patients and allowing for thorough examinations. The positive impact is that it helps assist doctors in diagnosis, planning for operations
+                    and provides an environment for education such as studying the anatomy of the human body.</li>
+                <li><span class="applications">Virtual Reality</span>: Graphics play a large role in the application of Virtual Reality. A notable example are flight simulations, which allow future pilots to
+                    visualize realistic environments in order to train and further educate themselves in their field.</li>
+                <li><span class="applications">Any Display!</span>: Smartphone interfaces to car dashboard screens, computer graphics are seemingly everywhere. They are heavily shaping the way we interact
+                    with technology.</li>
+            </ul>
+
+            <p><strong>Below is a video demonstrating the rendering of visual effects for Marvel Studios' The Avengers</strong></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MnQLjZSX7xM?si=cqskasiHHxFagqnf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        </div>
+
+        <!-- div semantic section for content -->
+        <div class="card-1">
+                <figure class="content-main1">
+                    <img src="img/lesson-1-wireframe.png" alt="Render with OpenGL" class="image-style">
+                    <figcaption>
+                        <br>
+                        <strong>Rendering using OpenGL engine written in C++ </strong>
+                        Image Credit:
+                        <a href="https://opengl.bassi.li/" target="_blank">OpenGL.bassi</a>
+                    </figcaption>
+                </figure>
+                <figure class="content-main1">
+                    <img src="img/What-is-CAD-CAM.jpg" alt="Image of pencil drawing" class="image-style">
+                    <figcaption>
+                        <br>
+                        <strong>Visual of CAD/CAM </strong>
+                        Image Credit:
+                        <a href="https://www.loadpointprecisionengineering.co.uk/what-is-cad-cam-and-why-is-it-a-benefit/" target="_blank">CAD/CAM</a>
+                    </figcaption>
+                </figure>
+        </div>
+
+        <!-- div semantic section for content -->
+        <div class="card-1">
+            <div>
+                <h4>Artificial Intelligence</h4>
+                <p class="paragraph-adjust">
+                    With the ever so growing utilization of graphics, Artificial Intelligence has evolved to become one of the pioneers of graphics applications. It is hastily 
+                    shifting the meta of computer graphics from manual labor work in creating visual imagery to the effortless collaboration with generative models. In other words, the user may just prompth the
+                    graphic and the AI does all the work. This has led to some underlying arguments on whether it is good for many industries because on one hand it heavily increases productivity but on the
+                    it reduces the essential human-to-computer communication it originally was designed for. Check out the future technology page to read more about what AI is doing to change Computer Graphics.
+                </p>
+            </div>
+        </div>
+
+        <p id="src-ref" class="content-main3">Source:<a href="https://www.ebsco.com/research-starters/computer-science/computer-graphics" target="_blank">EBSCO Computer Graphics</a></p>
+        <!-- semantic section for footer -->
+        <%- include('partials/footer.ejs') %> 
+        
+    </body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- partial for header -->
+    <%- include('partials/head.ejs') %> 
+
+    <body>
+        <!-- semantic section as navigation menu -->
+        <%- include('partials/nav.ejs') %> 
+
+        
+        <br><br>
+        <!-- div semantic section for main content -->
+        <div id="future-card1" class="card-1">
+            <h2>What's in store for Computer Graphics?</h2>
+
+                <figure class="content-main1">
+                    <img src="img/robotics-ai.jpg" alt="future robots" class="page-images">
+                    <figcaption>
+                        <br>
+                        <strong>Training Humanoid Robotics Using VR</strong>
+                        Image Credit:
+                        <a href="https://www.cgw.com/Press-Center/Web-Exclusives/2024/SIGGRAPH-2024-Spotlighting-the-future-of-compute.aspx" target="_blank">CGW Siggraph</a>
+                    </figcaption>
+                </figure>
+                <p class="paragraph-adjust">
+                    Computer Graphics, although being prominent in our everyday life is still a growing field. The advancement of real-time rendering, GPU technology, and AI have rapidly increased
+                    productivity and allows developers to create visualizations faster than before. The future of this technology may reach new potentials with the next step being Real-Time photorealism,
+                    Quantum or Cloud rendering, and advancement in AI-generated materials. It's likely to focus on concepts such as immersion with augmented reality with large-scale visuals and realistic
+                    motion capture. While the advancements for these technologies are great they do raise some ethical questions presumably in artistic ownership, authenticity of mediums, and scalability along with
+                    the environmental impacts. 
+                </p>
+        </div>
+
+        <div class="card-1">
+            <p><strong>Here are some examples of the technologies currently being researched:</strong></p> 
+            <table>
+                <tr id="table-header">
+                    <td><strong>Technology</strong></td>
+                    <td><strong>Description</strong></td>
+                    <td><strong>Impact</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>AI-Assisted Rendering</td>
+                    <td>Utilization of neural networks allowing for upscale and predictive visual details.</td>
+                    <td>Improves and reduces rendering times and hardware costs.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Generative Graphics</td>
+                    <td>Combining AI and 3D models to generate scenes and textures seamlessly.</td>
+                    <td>Revolutionizing content creation in films, gaming, and production.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Humanoid Robotics</td>
+                    <td>Utilizating Nvidia NUM microservices to develop simulations in order to train humanoid robots.</td>
+                    <td>Increase Productivity and reducing human demonstration data inputs.</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <!-- div semantic section for content -->
+        <div class="card-1">
+            <h2>Articles on the Future of Computer Graphics from Siggraph</h2>
+                <article>
+                <h3><a href="https://blog.siggraph.org/2025/10/making-scientific-discoveries-accessible-to-everyone.html/" target="_blank"><u>Making Scientific Discoveries Accessible to Everyone</u></a></h3>
+                <p>
+                    Specialists at NASA are working to make visual scientific data more engaging with general population. By doing so they are converting raw sattelite-model data
+                    into visualizations using graphical tools such as Houdini, Maya and custom graphical piplining. The underlying problem is that the visualizations are large-scaled reaching 
+                    issues with computational power and decisions for how much data can be shown.
+                </p>
+                </article>
+
+                <article>
+                <h3><a href="https://blog.siggraph.org/2025/08/generative-ai-in-computer-graphics-navigating-the-challenges-and-seizing-the-opportunities.html/" target="_blank"><u>Generative AI in Computer Graphics</u></a></h3>
+                <p>
+                    An opinionated article addressing the changes in computer graphics workflow. Discusses the opportunities and challenges many industry studios face. The article tackles the rise of generative AI
+                    noting that it allows artists to experiment with ideas much quicker than in the past. It mentions the computational problems and randomness of generated content, mentioning that artists are looking
+                    for consistent feedback. Raises the question of how AI can maintain scalability, consistency and collaborative workflows.
+                </p>
+                </article>
+
+                <article>
+                <h3><a href="https://blog.siggraph.org/2025/07/will-ai-completely-take-over-computer-graphics.html/" target="_blank"><u>Will AI Completely Take Over Computer Graphics?</u></a></h3>
+                <p>
+                    The article tackles the question on whether AI will completely transform and take over the Computer Graphics field. It discusses the overall adoption of AI within computer graphics
+                    pipelines and how it is taking over ever aspect from hardware processing, APIs, application and Tools. Briefly discussing the investment in AI for future graphics systems.
+                    It further mentions the ethical concerns of AI on job security to the decrease of human involvement in production. 
+                </p>
+                </article>
+                <br><br>
+        </div>
+
+        <p id="src-ref" class="content-main3">Source:<a href="https://www.cgw.com/Press-Center/Web-Exclusives/2024/SIGGRAPH-2024-Spotlighting-the-future-of-compute.aspx" target="_blank">Spotlighting the future of computer graphics</a></p>
+        <!-- semantic section for footer -->
+        <%- include('partials/footer.ejs') %> 
+        
+    </body>
+
+</html>

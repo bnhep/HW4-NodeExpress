@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- partial for header -->
+    <%- include('partials/head.ejs') %> 
+
+    <body>
+        <!-- semantic section as navigation menu -->
+        <%- include('partials/nav.ejs') %> 
+        <br><br>
+            <!-- div semantic section for content -->
+            <div id="explore-card2" class="card-1">
+                <div class="paragraph-adjust">
+                    <h2><strong><u>Academic Articles Relevant to Computer Graphics</u></strong></h2>
+                    <br>
+                        <% p.forEach( paper => { %>
+                            <h4><a href="<%= paper.url %>"><%= paper.title %></a></h4>
+                            <p><u>Abstract</u></p>
+                            <% if (paper.abstract !== null) { %>
+                                <p><%= paper.abstract %></p>
+                            <% } else { %>
+                                    <p>N/A</p>                      
+                            <% } %>
+                            <p>Year: <%= paper.year %></p>
+                            <% if (paper.pdf) { %>
+                                
+                                OpenAccessPDF:&nbsp<a href="<%= paper.pdf %>">PDF</a>
+                            <% } else {%>
+                                OpenAccessPDF:&nbsp N/A
+                            <% } %>
+                            <br><hr>
+                        <% }) %>
+                    <br>
+                </div>
+            </div>
+            <div class="card-1">
+                <h2><strong><u>Reddit Communities for Computer Graphics Related Content</u></strong></h2>
+                <br>
+                <div id="explore-card1">
+                <% subreddits.forEach( subreddit => { %>
+                    <div class="card-1" onclick="window.open('<%= subreddit.url %>', '_blank')">
+                    <h4><%= subreddit.title  %></h4><br>
+                    <%= subreddit.displayName %><br>
+                    <strong><%= subreddit.subscribers %> subscribers</strong>
+                    <a href= "<%= subreddit.url %>" target="_blank">Discover more</a>
+                    <br>
+                    </div>
+                    <% }); %>
+                </div>
+            </div>
+        <p id="src-ref" class="content-main3">Source:
+            <a href="https://www.semanticscholar.org/product/api" target="_blank">Semantic Scholar API</a><br> 
+            <a href="https://www.reddit.com/dev/api/" target="_blank">Reddit Public API</a>
+        </p>
+        <!-- semantic section for footer -->
+        <%- include('partials/footer.ejs') %> 
+        
+    </body>
+
+</html>

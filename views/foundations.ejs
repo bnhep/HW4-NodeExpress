@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- partial for header -->
+    <%- include('partials/head.ejs') %> 
+
+    <body>
+        <!-- semantic section as navigation menu -->
+        <%- include('partials/nav.ejs') %> 
+
+        
+        <br><br>
+        <main class="card-1">
+        <!-- div semantic section for main content -->
+            <h2>Foundations of Computer Graphics</h2>
+                <figure class="content-main1">
+                    <img src="<%= foundationImages[3].largeImageURL %>" loading="lazy" alt="Render with OpenGL" class="image-style">
+                    <figcaption>
+                        <br>
+                        Image Credit:
+                        <a href="<%= foundationImages[3].pageURL %>" target="_blank">Pixabay</a>
+                    </figcaption>
+                </figure>
+
+            <div class="content-main3">
+                <p class="paragraph-adjust"> 
+                    Computer Graphics is the involvment of a wide range of multi-discplinary fields ranging from physics, math, human-perception, engineering, design, and much more.
+                    It utilizes physics to model lighting and creating simulations of animation; mathematics to provide perception, transformations, describing shapes and visual perspectives; engineering 
+                    to fundamentally utilize data structures, algorithms, and computation in order to allocate the memory, bandwidth, and processing for creating the visual images.
+                </p>
+                <p class="paragraph-adjust">
+                    The basic principles and concepts for the field are not too complicated to understand. The general process of computer graphics is to create, modify, or work with digital image, which
+                    also includes those from the real world. First images are generated into models with the help of computer programs, they consists of either two types of graphic data that can be stored on
+                    the computer. One known as vector graphics which calls for mathematical formulas i.e linear algebra concepts, to create geometric images. The other is known as raster graphics which are a 
+                    grid of dots predominantly known as pixels. Utilizing these graphical data the computer can create 2D, 3D or even animated images.
+                    
+                    Though the process is not just getting the data and creating the images. It has to undergo a process known as the Graphic Pipeline. The data must be processed in some way to even display it
+                    on our screens. Over the years computer graphics programmers have developed tools and softwares to operate on graphical data and render the images across different systems. Some notable mentions are the
+                    OpenGL or Open Graphics Library which provides an API to operate on graphical data and DirectX to help software facilitate image communication with hardware.
+                </p>
+
+                <p class="paragraph-adjust">
+                    Let's take a look at the graphics pipeline. This process encompasses the way computers turn graphical data, 3D models, and images to display on the screen.
+                    The process is analogous to an assembly line for creating a picture. First, it undergoes modeling which mentioned before creates the objects using either vector or raster graphics.
+                    Next is the transformation, how the objects are positioned, scaled, and rotated so that they can properly be displayed. It then uses lighting and shading to give it some clarity. Lastly,
+                    it can either go into projection which involves converting a 3D image to 2D for your screen, rasterization to turn the pixels into its final form, and lastly displaying it by sending the data to
+                    the screen and seeing the rendered results. This is just a general overview of the pipeline but just to note there is so much more happening behind the scenes like which algorithms are used to render the images, how software is communicating with the hardware
+                    , and the complicated math theories. Moving on, below are maybe the three important parts of the pipeline for creating computer graphics dubbed as <a href="https://youtu.be/5egHuZ0KU-c?si=hJ2Dy_mM88B1aum0&t=216" target="_blank"> The Three Pillars </a>.
+                </p>
+            </div>
+        </main>
+        <!-- div semantic section for content -->
+        <div class="card-1">
+                <figure class="content-main1">
+                    <img src="<%= foundationImages[0].largeImageURL %>" loading="lazy" alt="Render with OpenGL" class="image-style">
+                    <figcaption>
+                        <br>
+                        Image Credit:
+                        <a href="<%= foundationImages[0].pageURL %>" target="_blank">Pixabay</a>
+                    </figcaption>
+                </figure>
+                <figure class="content-main1">
+                    <img src="<%= foundationImages[1].largeImageURL %>"  loading="lazy" alt="Render with OpenGL" class="image-style">
+                    <figcaption>
+                        <br>
+                        Image Credit:
+                        <a href="<%= foundationImages[1].pageURL %>" target="_blank">Pixabay</a>
+                    </figcaption>
+                </figure>
+        </div>
+        <div class="card-1">
+            <div class="content-main3">
+                <h2>The Three Pillars</h2>
+                <h4>Modeling</h4>
+                <p class="paragraph-adjust"> 
+                    The basis of modeling is specifically using the mathematical formulas to specify the shape and appearance properties such as the 
+                    size, color, texture, and positional parameters. In a sense it is building the form of the image, coming together from the surface or canvas in which it is created on.
+                    Some notable modeling software includes Blender, Maya, and Zbrush which allows for developers to create stylized objects for their medium. 
+                </p>
+                
+                <h4>Rendering</h4>
+                <p class="paragraph-adjust"> 
+                    Rendering is the process where the computer converts the 3D scene or model data into a generative 2D image to be displayed on the screens. Essentially it is like
+                    adding the final touches to the canvas by creating the lighting and depthness. Unreal Engine is a popular rendering software for video games and more.
+                </p>
+
+                <h4>Animation</h4>
+                <p class="paragraph-adjust"> 
+                    Animation involves displaying the images with an illusion of motion. It creates life for the image by creating sequences of the images using frames over some time.
+                    Some notable animation softwares include Maya and Blender.
+                </p>
+            </div>
+
+
+            <div class="content-main2">
+                        <h4>Table representing the different softwares utilized in Computer Graphics</h4>
+            <table>
+                <tr id="table-header">
+                    <td><strong>Software Examples</strong></td>
+                    <td><strong>Purposes</strong></td>
+                    <td><strong>Details</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Blender, Zbrush, Maya</td>
+                    <td>3D Modeling</td>
+                    <td>Creating 3D models of characters, environments, and objects. </td>
+                </tr>
+                <tr class="table-row">
+                    <td>V-Ray, Unreal Engine</td>
+                    <td>Rendering</td>
+                    <td>Generating realistic lighting, textures, and materials. </td>
+                </tr>
+                <tr class="table-row">
+                    <td>Blender, Maya</td>
+                    <td>Animation</td>
+                    <td>Enable keyframe animation, rigging, and motion design.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Unity, Unreal Engine, Godot</td>
+                    <td>Game Development</td>
+                    <td>Design, code, and deploy interactive games and simulations.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Adobe Photoshop, Adobe After Effects</td>
+                    <td>Image and Video Editing</td>
+                    <td>Image manipulation and texturing. Can be used for motion graphics, visual effects, and compositing.</td>
+                </tr>
+            </table>
+            </div>
+        <br>
+        </div>
+        <p id="src-ref" class="content-main3">Source:<a href="https://learning.oreilly.com/library/view/fundamentals-of-computer/9781000426359/" target="_blank">Fundamentals of Computer Graphics, 5th Edition(Requires Oreilly Account)</a></p>
+        <!-- semantic section for footer -->
+        <%- include('partials/footer.ejs') %> 
+        
+    </body>
+
+</html>

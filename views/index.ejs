@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- partial for header -->
+    <%- include('partials/head.ejs') %> 
+
+    <body>
+        <!-- semantic section as navigation menu -->
+        <%- include('partials/nav.ejs') %> 
+        <br><br>
+        <!-- semantic section for main content -->
+        <div class="card-1">
+            <figure class="content-main1">
+                <img src="<%= homeImages[0].url %>" loading="lazy" alt="Random Image" class="image-style">
+                <figcaption>
+                    <br>
+                    <strong>By <%= homeImages[0].photographer %></strong>
+                    Image Credit:
+                    <a href="<%= homeImages[0].page %>" target="_blank">Pexels</a>
+                </figcaption>
+            </figure>
+        
+            <div class="content-main2">
+                <p>
+                    Welcome to <em><strong>Exploring Computer Graphics!</strong></em>
+                </p>
+                <p>
+                   Take a glimpse and understand how computers, math, and creativity come together in order to shape the visual world.
+                </p>
+                <p>
+                    This website offers a brief introduction to the field of Computer Graphics. It's goal is to provide a quick overview of key concepts, 
+                    techniques, and real-world applications that make computer graphics one of the most prominent fields in tech. It will also
+                    delve into the future of Computer Graphics.
+                </p>
+            </div>
+        </div>
+
+            <!-- div semantic section for content -->
+            <div class="card-2">
+                <div class="content-main">
+                    <h2>What is Computer Graphics?</h2>
+                    <p class="paragraph-adjust">
+                        Computer Graphics is a field at the intersection of computer science and art that focuses on the the way in which computers produce and work with visual content. Largely involving creating,
+                        transforming, displaying, and manipulating images of all forms and shapes, examples such as both 2D and 3D representations. It surrounds itself with the general ideas of modeling, rendering, and visualization techniques.
+                        In addition it entails the development of software tools that allow users to design, animate, and interact with digital imagery.
+                    </p>
+                </div>
+                
+                <div class="content-main2">
+                    <h2>Why Computer Graphics?</h2>
+
+                    <p>
+                        According to <a href="https://learning.oreilly.com/library/view/hughes-computer-graphics-3-e/9780133373721/" target="_blank"> Hughe's book of Computer Graphics Principles and Practice </a>
+                        , Computer Graphics bridges the communication and interaction between humans and computers. When you think about it, modern societies encounter computer graphics every day, 
+                        from the displays on our phones and televisions to the very screen you're using to browse this website. Computer Graphics plays an important role in how we experience and interact
+                        with technology, this makes it essential to gather a better understanding of how these visualizations are created. Let's explore the general overview of what makes up this interesting
+                        field of Computer Graphics.
+                    </p>
+                </div>
+                <figure class="content-main1">
+                    <img src="<%= homeImages[1].url %>" loading="lazy" alt="Random Image" class="image-style">
+                    <figcaption>
+                        <br>
+                        <strong>By <%= homeImages[1].photographer %></strong>
+                        Image Credit:
+                        <a href="<%= homeImages[1].page %>" target="_blank">Pexels</a>
+                    </figcaption>
+                </figure>
+        
+
+
+            </div>
+
+        <p id="src-ref" class="content-main3">Source:<a href="https://learning.oreilly.com/library/view/hughes-computer-graphics-3-e/9780133373721/" target="_blank">Computer Graphics Principles and Practice(Requires Oreilly Account)</a></p>
+        <!-- semantic section for footer -->
+        <%- include('partials/footer.ejs') %> 
+        
+    </body>
+
+</html>
